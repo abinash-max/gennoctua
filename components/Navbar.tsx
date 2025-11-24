@@ -23,16 +23,17 @@ const Navbar: React.FC = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white/90 backdrop-blur-md shadow-md py-3' : 'bg-transparent py-5'
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white/90 backdrop-blur-md shadow-md py-3' : 'bg-transparent py-5'
+        }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center gap-2 cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-          <div className="text-brand-500">
-             <Cpu size={32} strokeWidth={2} />
-          </div>
+          <img
+            src="/images/gennoctua-logo.jpeg"
+            alt="Gennoctua Logo"
+            className="h-10 w-auto object-contain"
+          />
           <span className="text-xl font-bold tracking-wider text-gray-800">GENNOCTUA</span>
         </div>
 
