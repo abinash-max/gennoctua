@@ -41,7 +41,7 @@ const Contact: React.FC = () => {
                 className="w-full px-4 py-3 rounded-lg bg-orange-50 border-transparent focus:border-brand-500 focus:bg-white focus:ring-0 text-gray-700 placeholder-gray-400 transition-colors resize-none"
               ></textarea>
             </div>
-            
+
             <button
               type="button"
               className="w-full bg-brand-500 hover:bg-brand-600 text-white font-bold py-4 rounded-full shadow-lg shadow-brand-500/30 transition-all transform hover:-translate-y-1"
@@ -51,13 +51,13 @@ const Contact: React.FC = () => {
           </form>
 
           <div className="mt-12 flex justify-center space-x-6">
-            <a href="#" className="p-3 bg-orange-50 rounded-xl text-brand-500 hover:bg-brand-500 hover:text-white transition-colors">
+            <a href="https://www.linkedin.com/company/gennoctua" target="_blank" rel="noopener noreferrer" className="p-3 bg-orange-50 rounded-xl text-brand-500 hover:bg-brand-500 hover:text-white transition-colors">
               <Linkedin size={24} />
             </a>
-            <a href="#" className="p-3 bg-orange-50 rounded-xl text-brand-500 hover:bg-brand-500 hover:text-white transition-colors">
+            <a href="https://www.facebook.com/p/Gennoctua-Gen-61566411242331/" target="_blank" rel="noopener noreferrer" className="p-3 bg-orange-50 rounded-xl text-brand-500 hover:bg-brand-500 hover:text-white transition-colors">
               <Facebook size={24} />
             </a>
-            <a href="#" className="p-3 bg-orange-50 rounded-xl text-brand-500 hover:bg-brand-500 hover:text-white transition-colors">
+            <a href="https://www.instagram.com/gennoctua/" target="_blank" rel="noopener noreferrer" className="p-3 bg-orange-50 rounded-xl text-brand-500 hover:bg-brand-500 hover:text-white transition-colors">
               <Instagram size={24} />
             </a>
           </div>
