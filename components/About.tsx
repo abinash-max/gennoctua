@@ -11,15 +11,14 @@ const About: React.FC = () => {
             <div className="mb-10">
               <h2 className="text-brand-500 font-bold tracking-widest uppercase mb-4 text-sm">Who We Are</h2>
               <h3 className="text-3xl font-bold text-gray-900 mb-6">
-                Gennoctua is an AI-first R&D lab re-imagining digital interaction.
+                Gennoctua is where we build next-gen AI to personalize and elevate every digital interaction
               </h3>
             </div>
 
             <div className="pl-6 border-l-4 border-brand-500">
               <h2 className="text-brand-600 font-bold tracking-widest uppercase mb-4 text-sm">About The SDK</h2>
               <p className="text-lg text-gray-600 leading-relaxed">
-                Our engine translates behavioral data into instant, tailored UI modifications without latency.
-                We don't just personalize content; we morph the interface itself to match the cognitive preferences of the user in real-time.
+                We combine cutting-edge AI and deep shopping insights to deliver experiences that make every product feel magically tailored just for you.
               </p>
             </div>
           </div>

@@ -9,12 +9,12 @@ const Hero: React.FC = () => {
 
           {/* Text Content */}
           <div className="text-center lg:text-left">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-brand-500 leading-tight mb-6 uppercase tracking-tight text-glow">
-              The Hyper- <br /> Personalisation <br /> SDK
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-brand-500 leading-tight mb-6 tracking-tight text-glow">
+              Make Every Shopping Experience <br /> Uniquely Yours <br />
             </h1>
             <p className="text-lg sm:text-xl text-gray-600 mb-8 max-w-2xl mx-auto lg:mx-0">
-              Effortless integration for adaptive, intelligent user experiences.
-              Our engine translates behavioral data into instant, tailored UI modifications without latency.
+              With Gennoctua’s AI-powered hyper-personalization,
+              your customers see exactly what they love — right when it matters.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
