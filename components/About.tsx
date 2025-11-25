@@ -1,11 +1,27 @@
 import React from 'react';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 const About: React.FC = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    vertical: true,
+    verticalSwiping: true,
+    autoplaySpeed: 1500,
+    arrows: false,
+    className: 'h-full'
+  };
+
   return (
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
-
           {/* Content */}
           <div className="order-2 lg:order-1">
             <div className="mb-10">
@@ -23,23 +39,27 @@ const About: React.FC = () => {
             </div>
           </div>
 
-          {/* Image */}
+          {/* Vertical Image Carousel */}
           <div className="order-1 lg:order-2 flex justify-center">
-            <div className="relative w-full max-w-sm">
+            <div className="relative w-full max-w-sm" style={{ aspectRatio: '1/1' }}>
               <div className="absolute inset-0 bg-brand-100 rounded-3xl transform rotate-6 scale-105 opacity-50"></div>
-              <div className="relative bg-gradient-to-br from-gray-50 to-white rounded-3xl shadow-xl border border-gray-100 p-8 overflow-hidden">
-                <img
-                  src="/images/mid-image.png"
-                  alt="Chipset Technology"
-                  className="w-full h-auto rounded-lg shadow-inner mix-blend-darken"
-                />
-                <div className="absolute bottom-4 right-4 bg-white/80 backdrop-blur px-4 py-2 rounded-lg shadow text-xs font-mono text-brand-600 border border-brand-200">
-                  SDK_CORE_V2.0
-                </div>
+              <div className="relative bg-gradient-to-br from-gray-50 to-white rounded-3xl shadow-xl border border-gray-100 p-8 overflow-hidden h-full">
+                <Slider {...settings}>
+                  {[1, 2, 3, 4].map((num) => (
+                    <div key={num} className="h-full w-full flex items-center justify-center p-4">
+                      <div className="relative w-full h-full">
+                        <img 
+                          src={`/images/aw-${num}.png`} 
+                          alt={`aw-${num}`} 
+                          className="w-full h-full object-contain rounded-lg" 
+                        />
+                      </div>
+                    </div>
+                  ))}
+                </Slider>
               </div>
             </div>
           </div>
-
         </div>
 
         {/* Section Divider Title for next section */}
