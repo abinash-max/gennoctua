@@ -4,13 +4,19 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "start": "node server.js",
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "dev:full": "concurrently \"npm run start\" \"npm run dev\""
   },
   "dependencies": {
     "@types/react-slick": "^0.23.13",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
     "lucide-react": "^0.554.0",
+    "mongoose": "^9.0.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-slick": "^0.31.0",
@@ -19,6 +25,7 @@
   "devDependencies": {
     "@types/node": "^22.14.0",
     "@vitejs/plugin-react": "^5.0.0",
+    "concurrently": "^9.2.1",
     "typescript": "~5.8.2",
     "vite": "^6.2.0"
   }

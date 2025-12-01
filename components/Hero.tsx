@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, MessageCircle } from 'lucide-react';
+
 
 const Hero: React.FC = () => {
   return (
@@ -17,14 +17,7 @@ const Hero: React.FC = () => {
               your customers see exactly what they love — right when it matters.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <button className="bg-brand-500 hover:bg-brand-600 text-white font-semibold py-3 px-8 rounded-full transition-all shadow-lg shadow-brand-500/30 flex items-center justify-center gap-2">
-                View Documentation <ArrowRight size={18} />
-              </button>
-              <button className="bg-transparent border-2 border-brand-500 text-brand-600 hover:bg-brand-50 font-semibold py-3 px-8 rounded-full transition-all flex items-center justify-center gap-2">
-                Talk to Sales <MessageCircle size={18} />
-              </button>
-            </div>
+
           </div>
 
           {/* Visual Content */}
@@ -43,20 +36,9 @@ const Hero: React.FC = () => {
               {/* Mid Image Overlay */}
 
 
-              {/* Floating elements simulation */}
-              <div className="absolute -top-6 -right-6 bg-white p-3 rounded-xl shadow-xl border border-brand-100 hidden sm:block animate-bounce" style={{ animationDuration: '3s' }}>
-                <div className="flex items-center gap-2">
-                  <div className="w-3 h-3 bg-green-500 rounded-full"></div>
-                  <span className="text-xs font-bold text-gray-700">Active Learning</span>
-                </div>
-              </div>
 
-              <div className="absolute -bottom-6 -left-6 bg-white p-3 rounded-xl shadow-xl border border-brand-100 hidden sm:block animate-bounce" style={{ animationDuration: '4s' }}>
-                <div className="flex items-center gap-2">
-                  <div className="w-3 h-3 bg-brand-500 rounded-full"></div>
-                  <span className="text-xs font-bold text-gray-700">Latency &lt;15ms</span>
-                </div>
-              </div>
+
+
             </div>
           </div>
         </div>

@@ -10,13 +10,13 @@ interface FeatureCardProps {
 const FeatureCard: React.FC<FeatureCardProps> = ({ icon, title, description }) => (
   <div className="group relative p-8 bg-white rounded-2xl border border-brand-100 hover:border-brand-400 shadow-sm hover:shadow-xl hover:shadow-brand-100 transition-all duration-300 h-full flex flex-col">
     <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-brand-50 to-transparent rounded-tr-2xl -z-0 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-    
+
     <div className="w-14 h-14 bg-orange-50 rounded-xl flex items-center justify-center text-brand-500 mb-6 group-hover:scale-110 transition-transform duration-300 z-10">
       {icon}
     </div>
-    
+
     <h3 className="text-xl font-bold text-gray-900 mb-4 z-10">{title}</h3>
-    
+
     <p className="text-gray-600 leading-relaxed flex-grow z-10 text-sm">
       {description}
     </p>
@@ -32,7 +32,7 @@ const Features: React.FC = () => {
     {
       icon: <ScanFace size={32} />,
       title: "Zero-Touch Virtual Try-on",
-      description: "Auto-selects the best photos from your customer’s gallery. No selfies, no scanning, no manual upload step required for seamless integration."
+      description: "No selfies, no scanning, no manual upload required for seamless integration."
     },
     {
       icon: <Smartphone size={32} />,
@@ -56,7 +56,7 @@ const Features: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((feature, index) => (
-            <FeatureCard 
+            <FeatureCard
               key={index}
               icon={feature.icon}
               title={feature.title}
